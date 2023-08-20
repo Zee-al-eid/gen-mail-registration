@@ -5,10 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <style>
         @font-face {
             font-family: ProximaNovaBold;
             src: url(https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/fonts/ProximaNova-Bold.woff);
+        }
+        @font-face {
+            font-family: ProximaNovaLight;
+            src: url(https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/fonts/ProximaNova-Light.woff);
         }
 
         :root {
@@ -52,6 +59,7 @@
         }
 
         label {
+            font-family: ProximaNovaLight;
             cursor: pointer;
             margin-bottom: 8px;
         }
@@ -82,6 +90,9 @@
         #btn {
             background-color: var(--black);
             color: var(--white);
+            font-family: Roboto;
+            font-weight: 500;
+            letter-spacing: 4px;
             text-transform: uppercase;
             width: 134px;
             height: 46px;
@@ -113,7 +124,7 @@
 <body>
     <div class="container">
         <img src="./logo-black.png" alt="logo" width="110px">
-        <h1>Let's Collaborate!</h1>
+        <h1>Let’s Collaborate!</h1>
         <form action="POST">
             <label for="name">Name</label>
             <input class="inputs" type="text" name="name" id="name" required>
